@@ -9,10 +9,11 @@ module.exports = {
         this.data.gameView = new GameView(0,0,64,this.data.sprites);
         this.data.gameView.setMap('library');
         
-        await this.data.gameView.renderFrame(11,16);
+        this.data.gameView.offsets = [11,16];
+        await this.data.gameView.renderFrame(...this.data.gameView.offsets);
         this.data.gameView.setPlayer('Front');
         
-        this.data.gameView.message = await msg.channel.send(new Attachment(await this.data.gameView.getFrame(),'game.png'));
+        this.data.gameView.message = await msg.channel.send(new Attachment('assets/Title Card Yuuuge.png','game.png'));
     },
     
     async onLoad() {

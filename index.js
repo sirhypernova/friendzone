@@ -2,7 +2,7 @@ const { ClientCore } = require('cmd-dj');
 const { Client } = ClientCore;
 
 const fz = new Client({
-    token: 'NDc0NzYwMjI1NDkzMDkwMzA1.DkVLSQ.p9ku261_wzmEHHoP3yhkMUVQV3E',
+    token: 'NDc0NzYwMjI1NDkzMDkwMzA1.Dkcncg.N0XjZJW51-o8XbL-7E4cGT1l7BI',
     prefix: 'f!',
     owners: [
         '225738946661974017'
