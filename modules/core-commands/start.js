@@ -12,6 +12,7 @@ module.exports = {
         this.data.gameView.offsets = [11,16];
         await this.data.gameView.renderFrame(...this.data.gameView.offsets);
         this.data.gameView.setPlayer('Front');
+        await msg.channel.bulkDelete(100).catch(()=>{});
         
         this.data.gameView.message = await msg.channel.send(new Attachment('assets/Title Card Yuuuge.png','game.png'));
     },
