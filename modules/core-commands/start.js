@@ -6,6 +6,7 @@ const GameView = require('../../classes/gameView.js');
 module.exports = {
     async handler(msg,args,fz) {
         msg.delete();
+        if (msg.channel.id != '475046843554725900') return;
         this.data.gameView = new GameView(0,0,64,this.data.sprites);
         this.data.gameView.setMap('library');
         
